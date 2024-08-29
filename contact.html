@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title -->
+    <title>Sovit Thapa - Portfolio - Contact</title>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- meta tags -->
+    <meta name="description" content="Professional Portfolio Contact Page">
+    <meta name="keywords" content="portfolio, student, web developer, designer, basic web template, contact form, form template">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- container that holds navbar -->
+    <div class="container">
+        <a href="index.html" class="logo-link">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </a>
+        
+        <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle">&#9776; Menu</label>
+    <nav class="navbar">
+        <ul>
+            <li class="homenav"><a href="index.html">Home</a></li>
+            <li class="aboutnav"><a href="about.html">About</a></li>
+            <li class="contactnav"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- contact section -->
+    <section id="contact">
+        <div id="contactHeading">
+            <p class="contact_p1">Wanna Work With Me ?</p>
+          <h1 class="title">Contact Me</h1>
+        </div>
+        <div class="containerContact">
+            <form>
+          
+              <label for="fname">Full Name</label>
+              <input type="text" id="name" name="fullname" placeholder="Your full name.." required>
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email address..">
+          
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="Write your message.." style="height:100px" required></textarea>
+              <button type="submit" id="submitButton">Submit</button>
+            </form>
+          </div>
+      </section>
+
+      <!-- footer -->
+      <footer>
+        <p>©2024 Sovit Thapa<br>
+        <a href="mailto:thapasovit123@gmail.com">thapasovit123@gmail.com</a></p>
+      </footer>
+      
+</body>
+</html>

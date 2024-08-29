@@ -1,0 +1,391 @@
+/* mobile layout css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightyellow;
+    font-family: "Merriweather", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar ul li.contactnav {
+  text-decoration: underline goldenrod; /* Change to your desired color */
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo{
+  display: inline-block;
+  color: black;
+  height: 35px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin: 0%;
+  background-color: black;
+  padding: 20px;
+  color: white;
+  overflow: hidden;
+}
+
+
+.menu-toggle{
+  font-size: 18px;
+  display: flex;
+  float: right;
+}
+
+.navbar {
+  display: none;
+}
+
+#menu-toggle:checked ~ .navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+
+
+.navbar ul {
+  display: block;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: block;
+  margin-left: 0%;
+  font-size: 20px;
+  
+}
+
+form{
+  color: white;
+}
+
+.navbar ul li a {
+  color: white;
+  display: block;
+  padding: 10px 90px;
+  transition: background-color 0.3s ease;
+}
+
+footer {
+    width: 100%;
+    bottom: 0;
+    text-align: start;
+    margin: 0;
+    padding: 4%;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+  }
+
+  footer a{
+    color: white;
+    font-size: 12px;
+  }
+
+  #contactHeading{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+  }
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 26.8%;
+    margin-top: 1%;
+}
+
+.containerContact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  opacity: 69%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 2%;
+}
+
+[for="fname"]::after {
+    content: ' *';
+    color: red;
+}
+
+[for="subject"]::after {
+    content: ' *';
+    color: red;
+  }
+
+/* css for larger screens */
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    .container {
+      background-color: black;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+  }
+  
+  .logo-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+    margin-top: 0;
+}
+  .navbar a:hover {
+     
+      text-decoration: underline goldenrod;
+      transform: scale(1.1);
+    }
+  
+  .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 18px;
+  }
+  
+  .menu-toggle:hover {
+      text-decoration: underline;
+  }
+  
+  .navbar {
+      display: flex;
+  }
+  
+  .navbar ul {
+      list-style-type: none;
+      display: flex;
+  }
+  
+  .allhomedetails{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .content{
+    width:100%;
+    float: right;
+  }
+  
+  .section__container{
+    margin-left: 25%;
+    margin-top: 15%;
+    margin-right: 10%;
+  }
+  
+  .navbar a {
+      text-decoration: none;
+      color: white;
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    text-align: start;
+    margin: 0;
+    padding: 2%;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+  }
+  
+  footer a{
+    color: white;
+    font-size: 12px;
+  }
+
+  button {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 26.8%;
+    margin-top: 9%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+  
+/* css for larger screens  */
+  }@media screen and (min-width: 900px) and (orientation: landscape) {
+    /* this is for navbar container */
+    .container {
+      background-color: black;
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .logo-link {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  .logo {
+      width: 100px;
+      height: 100px;
+      margin-left: 25px;
+      margin-top: 0;
+  }
+  
+  .navbar a:hover {
+     
+      text-decoration: underline goldenrod;
+      transform: scale(1.1);
+    }
+  
+  .menu-toggle {
+      display: none;
+      cursor: pointer;
+      font-size: 18px;
+  }
+  
+  .menu-toggle:hover {
+      text-decoration: underline;
+  }
+  
+  .navbar {
+      display: flex;
+  }
+  
+  .navbar ul {
+      list-style-type: none;
+      display: flex;
+  }
+  
+  .content{
+    width:100%;
+    float: right;
+  }
+  
+  .section__container{
+    margin-left: 25%;
+    margin-top: 15%;
+    margin-right: 10%;
+  }
+  
+  .navbar a {
+      text-decoration: none;
+      color: white;
+  }
+
+  .navbar ul li.contactnav {
+    text-decoration: underline goldenrod; 
+  }
+  
+  footer {
+    width: 100%;
+    bottom: 0;
+    text-align: start;
+    margin: 0;
+    padding: 2%;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+  }
+  
+  footer a{
+    color: white;
+    font-size: 12px;
+  }
+
+  #contactHeading{
+    padding-top: 2%;
+  }
+
+  .containerContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 69%;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  
+    
+  }
+
+  .contact_p1{
+    font-size: 20px;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+  
+  }
